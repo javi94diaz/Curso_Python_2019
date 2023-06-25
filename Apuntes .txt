@@ -1,0 +1,11 @@
+html es predefinido y no estricto
+	etiquetas predefinidas pero no sensible a mayusculas, orden de cierre
+	y demas
+xml es estricto y no predefinido 
+	te inventas las etiquetas pero debe seguir orden de cierre, minusculas 	y mayusculas etc
+
+
+dbader.org pagina para aprender python
+
+
+

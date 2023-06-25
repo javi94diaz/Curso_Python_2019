@@ -1,0 +1,55 @@
+def GeneraImagenAhorcado(numErroresAhorcado):
+	if numErroresAhorcado<0:
+		return
+	else:
+		IMAGENES_AHORCADO = ['''
+		    +---+
+		    |   |
+		        |
+		        |
+		        |
+		        |
+		  =========''', '''
+		    +---+
+		    |   |
+		    O   |
+		        |
+		        |
+		        |
+		  =========''', '''
+		    +---+
+		    |   |
+		    O   |
+		    |   |
+		        |
+		        |
+		  =========''', '''
+		    +---+
+		    |   |
+		    O   |
+		   /|   |
+		        |
+		        |
+		  =========''', '''
+		    +---+
+		    |   |
+		    O   |
+		   /|\\  |
+		        |
+		        |
+		  =========''', '''
+		    +---+
+		    |   |
+		    O   |
+		   /|\\  |
+		   /    |
+		        |
+		  =========''', '''
+		    +---+
+		    |   |
+		    O   |
+		   /|\\  |
+		   / \\  |
+		        |
+		  =========''']
+		return IMAGENES_AHORCADO[numErroresAhorcado]

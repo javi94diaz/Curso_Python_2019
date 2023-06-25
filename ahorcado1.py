@@ -1,11 +1,14 @@
 # Juego del ahorcado en Python
 
-# AÑADIDOS: 
+# AÑADIDOS POR HACER: 
 # 1) Que pregunte si quieres volver a jugar (reseteando todas las variables que hagan falta)
 # 2) Para eso puedo crear otra clase que sea "partida" y que lleve tambien las condiciones de victoria
 # 3) Poner la condicion de repetir partida en Si la primera vez
-
-
+# 4) Chequear que el usuario solo introduce letras a-z, y que rechace numeros y otros caracteres repitiendo la pregunta
+# 5) Poner bien lo de "Letra repetida", que lo imprima y no se borre (o que aguante unos segundos antes de borrarse, usar system.sleep o algo asi)
+# 6) Imprimir Victoria o Game Over en letras grandes, hechas de asteriscos
+# 7) Que admita al usuario introducir como "palabra secreta" varias palabras separadas por espacios (como un panel de la ruleta de la suerte)
+# 8) En vez de introducir una palabra secreta, que se cojan palabras al azar de una lista, bien en memoria o bien en un fichero de texto.
 import os
 
 letra_jugador = '' # Variable global que contiene la letra que introducira el jugador en cada turno
@@ -79,12 +82,12 @@ class panel:	# Muestra la palabra en curso, la lista de fallos y la lista de let
 mi_horca = horca() 
 mi_panel = panel(input("Nueva palabra secreta: "))
 
-final = 0 	#Variable para verificar condiciones de derrota
+final = 0 	#Variable para verificar condiciones de victoria
 
 while True:
 	os.system('cls')
-	if final == 1:		
-		print("GAME OVER. La palabra correcta era: {}".format(mi_panel.palabra_secreta))
+	if final == 1:
+		print("GAME OVER")
 		break
 	if '_' not in mi_panel.palabra_encurso:
 		print("PALABRA ADIVINADA: {}\n¡¡¡ VICTORIA !!!".format(mi_panel.palabra_secreta))
@@ -93,4 +96,3 @@ while True:
 	mi_panel.ver_panel()
 	letra_jugador = input("Introduce una letra: ")
 	mi_panel.clasificar_letra(mi_horca)
-	

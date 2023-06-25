@@ -1,5 +1,5 @@
 # Programa que encuentra los n primeros numeros centronumericos.
-# Numeros centronumericos: aquellos numeros que cumplen que la suma de sus anteriores da lo mismo que la suma de unos cuantos superiores al numero centronumerico.
+# Numeros centronumericos: aquellos numeros que cumplen que la suma de sus anteriores da lo mismo que la suma de unos cuantos superiores al numero centronumericos.
 # El primero es el 6, el siguiente es el 35
 
 # 1+2+3+4+5 = 15				Numero: 6			7+8 = 15
